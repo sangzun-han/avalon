@@ -1,0 +1,167 @@
+.game_setting {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.game_setting .game_setting_inner {
+  pointer-events: all;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  transition: all 0.2s;
+}
+
+.game_setting .game_setting_inner .player {
+  position: relative;
+  vertical-align: middle;
+  width: 132px;
+  height: 132px;
+  text-align: center;
+}
+
+.game_setting .game_setting_inner .player .player_avatar {
+  position: relative;
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar
+  .player_avatar_background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(0);
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s;
+  background-image: url("../../assets/images/image-avatar-frame.png");
+  background-size: contain;
+}
+
+.game_setting .game_setting_inner .player .player_avatar_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s;
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar_container
+  .player_username_wrapper {
+  width: 100%;
+  height: 28px;
+  position: absolute;
+  background-image: url("../../assets/images/image-nickname.png");
+  background-size: contain;
+  margin-bottom: -35px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar_container
+  .player_username_wrapper
+  .player_username {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 92.5%;
+  overflow: hidden;
+  text-overflow: eclipsis;
+  white-space: nowrap;
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar_container
+  .player_user_ready_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar_container
+  .player_user_ready_wrapper
+  .player_user_ready {
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  animation: typewriter steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar_container
+  .player_avatar_avatar {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.game_setting
+  .game_setting_inner
+  .player
+  .player_avatar_container
+  .player_username_wrapper
+  .host {
+  color: red;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 75px;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
