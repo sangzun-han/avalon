@@ -44,7 +44,7 @@
   width: 100%;
   height: 100%;
   transition: opacity 0.2s;
-  background-image: url("../../assets/images/image-avatar-frame.png");
+  background-image: url("../../assets/images/image-avatar-frame.webp");
   background-size: contain;
 }
 
@@ -64,9 +64,9 @@
   .player_avatar_container
   .player_username_wrapper {
   width: 100%;
-  height: 28px;
+  height: 30px;
   position: absolute;
-  background-image: url("../../assets/images/image-nickname.png");
+  background-image: url("../../assets/images/image-nickname.webp");
   background-size: contain;
   margin-bottom: -35px;
   bottom: 0;

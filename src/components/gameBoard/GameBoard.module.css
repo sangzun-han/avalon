@@ -8,6 +8,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-size: contain;
+  background-image: url("../../assets/images/image-game-board.webp");
 }
 
 .game_table .game_table_settings {
