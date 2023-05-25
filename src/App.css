@@ -1,3 +1,27 @@
-#root {
-  min-height: 100vh;
+:root {
+  --primary-color: #001f2d;
+  --text-color: #ffffff;
+  --purple: #5b35d5;
+  --lightPurple: #6d4cda;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "Nanum Gothic";
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #121212;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
 }

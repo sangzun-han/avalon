@@ -1,0 +1,66 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../..//assets/images/image-background.webp");
+}
+
+.content {
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.content .main_text {
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.content .main_text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.content .main_text h1 {
+  font-size: 8rem;
+  line-height: 1;
+  color: var(--text-color);
+  margin: 0 0 2rem;
+  font-family: "Permanent Marker", cursive;
+  word-wrap: break-word;
+}
+
+.content .main_text h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.content .main_text .go_lobby {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid var(--purple);
+  background: var(--purple);
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 350px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.content .main_text .go_lobby:hover {
+  background: var(--lightPurple);
+  border-color: var(--lightPurple);
+}
