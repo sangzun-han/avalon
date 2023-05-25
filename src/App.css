@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #001f2d;
+  --primary-color: #010101;
   --text-color: #ffffff;
   --purple: #5b35d5;
   --lightPurple: #6d4cda;
@@ -15,7 +15,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #121212;
+  background: var(--primary-color);
 }
 li {
   list-style: none;
