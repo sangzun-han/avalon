@@ -1,20 +1,10 @@
 
-server :
-
-  port : 8080
-
-
-
-  JPA :
+server:
+  port :8080
 
 
 
 
-  Redis :
-
-
-
-
-  MySQL:
-
-
+spring:
+  profiles:
+    active : local
