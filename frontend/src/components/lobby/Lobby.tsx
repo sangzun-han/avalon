@@ -1,5 +1,5 @@
 import styles from "./Lobby.module.css";
-import OnlineUserList from "./OnLineUserList";
+import OnlineUserList from "./OnlineUserList";
 
 const Lobby = () => {
   const onlineUsers = ["User1", "User2", "User3", "User4"];
