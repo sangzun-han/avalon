@@ -1,20 +1,12 @@
 
-server :
+server:
+  port :8080
 
-  port : 8080
-
-
-
-  JPA :
-
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
 
 
-
-  Redis :
-
-
-
-
-  MySQL:
-
-
+spring:
+  profiles:
+    active : dev

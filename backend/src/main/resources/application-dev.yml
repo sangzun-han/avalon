@@ -1,0 +1,46 @@
+server:
+  servlet:
+    context-path: /test
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+
+spring:
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+    open-in-view: false
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(0Ghkf4CVYw4m9JOLgIql0uL/MU7kcrmmof9lrPjyQBKu3K6s47bew+e0yIpiZJKto7L+qiv3PhY8dTV/0yuOoX6jSNcjmC2cWnaEsW/l30PV/LbH60C/PrwIg6+aN4C0hpb9J8foa2eufmcIZMl4a0/DpTL3LYy5/XDGVH9yGjB13k4ZrLpbNiQHBt6TVmE9Pw1hPGxWQb5E9wAv42vOigwRYNHyWJXbSWiN6FxdNceW1dK+8Vy0jA==)
+    username: ENC(8zIM6ke9ZmjBIooyWbvwu4hrq+vFHPHP)
+    password: ENC(zB8zhmim9i3SnDoJnygF3UqWdXFUK4RG)
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+      location: ./file/temp
+
+
+  jeonyeok:
+    mwo:
+      meokji:
+        password : ENC(암호화된 값)

@@ -1,0 +1,38 @@
+server :
+  servlet:
+    context-path: /test
+  port: 8080
+
+  logging:
+    level:
+      org.hibernate.type.descriptor.sql.BasicBinder: trace
+
+spring:
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+    open-in-view: false
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(hFldb+Ukz6BmVtCX6PtdpJQuXmIeLTcDuxPBJcASpWLdGfwp/Tt31C5ST5W+vRyxuvlHCR8K6Poz6jxkzh17Ysl3W8qij5AaniVPSAoAZI2toezTN/wNgie9aTpUKydSvJwrhVHEzmyflkOIp+F2ndjPbuu5EKYMOA9GLw51i9Bt4DgN3nUYMScHxlIGaqHThvhD4i9w70g684cahwp2tx4ICerAr6m58R6Djyim0r1RZS8krLV6AQ==)
+    username: ENC(mzg9+i82M0oKzivuqQdVHg==)
+    password: ENC(R9BfnQWWiQR7Nkgzhr+WRg==)
+
+
+
