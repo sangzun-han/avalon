@@ -9,3 +9,82 @@
   display: flex;
   align-items: center;
 }
+
+.lobby {
+  width: 888px;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+}
+
+header .title {
+  font-size: 4rem;
+}
+
+.lobby .room_button {
+  margin: 0 20px 20px 20px;
+}
+
+.lobby .game_title {
+  margin-bottom: 10px;
+}
+
+.user-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-list li {
+  margin-bottom: 10px;
+}
+
+.game_rooms {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.game_rooms .room {
+  width: calc(50% - 40px);
+  height: 150px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.game_rooms h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game_rooms p {
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+
+.danger {
+  padding: 10px 20px;
+  background-color: #ff4646;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.danger:hover {
+  background-color: #d42e2e;
+}
